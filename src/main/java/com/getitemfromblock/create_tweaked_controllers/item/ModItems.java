@@ -11,7 +11,7 @@ public class ModItems
 
     static
     {
-        CreateTweakedControllers.registrate().setCreativeTab(ModTab.MOD_TAB);
+        CreateTweakedControllers.registrate().defaultCreativeTab(ModTab.MOD_TAB_KEY);
     }
 
     public static final ItemEntry<TweakedLinkedControllerItem> TWEAKED_LINKED_CONTROLLER =

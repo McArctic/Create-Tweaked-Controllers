@@ -4,6 +4,7 @@ import com.getitemfromblock.create_tweaked_controllers.item.ModItems;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.bus.api.IEventBus;
@@ -14,6 +15,8 @@ public class ModTab
 {
     private static final DeferredRegister<CreativeModeTab> REGISTER =
         DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CreateTweakedControllers.ID);
+    public static final ResourceKey<CreativeModeTab> MOD_TAB_KEY =
+        ResourceKey.create(Registries.CREATIVE_MODE_TAB, CreateTweakedControllers.asResource("base"));
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MOD_TAB = REGISTER.register("base",
     () -> CreativeModeTab.builder()
