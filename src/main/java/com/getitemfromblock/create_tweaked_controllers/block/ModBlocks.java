@@ -12,7 +12,7 @@ public class ModBlocks
 
     static
     {
-        CreateTweakedControllers.registrate().setCreativeTab(ModTab.MOD_TAB);
+        CreateTweakedControllers.registrate().defaultCreativeTab(ModTab.MOD_TAB_KEY);
     }
 
     public static final BlockEntry<TweakedLecternControllerBlock> TWEAKED_LECTERN_CONTROLLER =
